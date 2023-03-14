@@ -27,7 +27,7 @@ public class MeuGestorDeProjetos {
         project.setId(3);
         project.setName("Novo nome do projeto");
         //projectController.update(project);
-        projectController.removeById(3);
+        //projectController.removeById(3);
         //List<Project> projects = projectController.getAll();
         //System.out.println("Total de projetos = " + projects.size());
         
