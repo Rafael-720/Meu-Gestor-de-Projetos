@@ -22,10 +22,12 @@ public class MeuGestorDeProjetos {
         Project project = new Project();
         project.setName("Projeto teste");
         project.setDescription("description");
-        projectController.save(project);
+        //projectController.save(project);
         
-        //project.setName("Novo nome do projeto");
+        project.setId(3);
+        project.setName("Novo nome do projeto");
         //projectController.update(project);
+        projectController.removeById(3);
         //List<Project> projects = projectController.getAll();
         //System.out.println("Total de projetos = " + projects.size());
         
