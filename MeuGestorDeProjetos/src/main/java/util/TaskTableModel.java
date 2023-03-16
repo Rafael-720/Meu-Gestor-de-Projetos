@@ -73,8 +73,8 @@ public class TaskTableModel extends AbstractTableModel{
     }
     
     @Override
-    public void setValueAt(Object value, int rowIndex, int columnIndex){
-        tasks.get(rowIndex).setIsCompleted((boolean)value);
+    public void setValueAt(Object avalue, int rowIndex, int columnIndex){
+        tasks.get(rowIndex).setIsCompleted((boolean)avalue);
     }
 
     public String[] getColumns() {
