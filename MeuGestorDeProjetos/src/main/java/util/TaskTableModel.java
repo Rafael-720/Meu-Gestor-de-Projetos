@@ -17,7 +17,7 @@ import model.Task;
 public class TaskTableModel extends AbstractTableModel{
 
     String[] columns = {"Nome", "Descrição", "Prazo", "Tarefa Concluída", "Editar", "Excluir"};
-    List<Task> tasks = new ArrayList<>();
+    List<Task> tasks = new ArrayList();
     
     
     @Override
@@ -73,8 +73,9 @@ public class TaskTableModel extends AbstractTableModel{
     }
     
     @Override
-    public void setValueAt(Object avalue, int rowIndex, int columnIndex){
-        tasks.get(rowIndex).setIsCompleted((boolean)avalue);
+    public void setValueAt(Object aValue, int rowIndex, int columnIndex){
+        tasks.get(rowIndex).setIsCompleted((boolean)aValue);
+        //System.out.println(aValue);
     }
 
     public String[] getColumns() {

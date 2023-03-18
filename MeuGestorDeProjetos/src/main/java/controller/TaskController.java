@@ -60,6 +60,7 @@ public class TaskController {
     public void update(Task task){
         String sql = "UPDATE tasks SET "
                 + "idProject = ?,"
+                + "name = ?,"
                 + " description = ?,"
                 + "completed = ?,"
                 + "notes = ?,"
@@ -99,7 +100,7 @@ public class TaskController {
         }
     }
     
-    public void removeById(int taskId) throws SQLException{
+    public void removeById(int taskId){
         
         String sql = "DELETE FROM tasks WHERE id = ?";
         
