@@ -143,20 +143,27 @@ public class ProjectJDialogScreen extends javax.swing.JDialog {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    //save button
     private void jLabelTopbarSaveMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabelTopbarSaveMouseClicked
         // TODO add your handling code here:
         try{
-            Project project = new Project();
-            project.setName(jTextFieldProjectName.getText());
-            project.setDescription(jTextAreaProjectDescription.getText());
-        
-            controller.save(project);
-            JOptionPane.showMessageDialog(rootPane, "Projeto criado com sucesso");
+            if(!jTextFieldProjectName.getText().equals("")){
+                Project project = new Project();
+                project.setName(jTextFieldProjectName.getText());
+                project.setDescription(jTextAreaProjectDescription.getText());
+                controller.save(project);
+                JOptionPane.showMessageDialog(rootPane, "Projeto criado com sucesso");
+                this.dispose();
+            }else{
+                JOptionPane.showMessageDialog(rootPane, "O Projeto não foi salvo, pois o campo Nome não foi preenchido");
+            
+            }
+  
         }catch(Exception e){
             JOptionPane.showMessageDialog(rootPane, e.getMessage());
         }
         
-        this.dispose();
+        
     }//GEN-LAST:event_jLabelTopbarSaveMouseClicked
 
     /**

@@ -118,17 +118,19 @@
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Component id="jLabelTaskName" max="32767" attributes="0"/>
                       <Component id="jTextFieldTaskName" max="32767" attributes="0"/>
+                      <Component id="jScrollPaneTaskNotes" alignment="0" pref="376" max="32767" attributes="0"/>
                       <Component id="jScrollPaneTaskDescription" pref="376" max="32767" attributes="0"/>
                       <Component id="jLabelTaskDeadline" max="32767" attributes="0"/>
-                      <Component id="jScrollPaneTaskNotes" alignment="0" max="32767" attributes="0"/>
+                      <Component id="jFormattedTextFieldTaskDeadline" alignment="0" max="32767" attributes="0"/>
                       <Group type="102" attributes="0">
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="jLabelTaskDescription" min="-2" max="-2" attributes="0"/>
                               <Component id="jLabelTaskNotes" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="jLabelNameError" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="jLabelTaskDescription" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="jLabelDeadlineError" alignment="0" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                       </Group>
-                      <Component id="jFormattedTextFieldTaskDeadline" alignment="0" max="32767" attributes="0"/>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
               </Group>
@@ -141,18 +143,22 @@
                   <Component id="jLabelTaskName" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="jTextFieldTaskName" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="jLabelNameError" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
                   <Component id="jLabelTaskDescription" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="jScrollPaneTaskDescription" min="-2" pref="135" max="-2" attributes="0"/>
-                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
                   <Component id="jLabelTaskDeadline" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="jFormattedTextFieldTaskDeadline" min="-2" pref="32" max="-2" attributes="0"/>
-                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="jLabelDeadlineError" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace pref="34" max="32767" attributes="0"/>
                   <Component id="jLabelTaskNotes" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="jScrollPaneTaskNotes" pref="135" max="32767" attributes="0"/>
+                  <Component id="jScrollPaneTaskNotes" min="-2" pref="168" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
               </Group>
           </Group>
@@ -164,7 +170,7 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="14" style="0"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Nome"/>
+            <Property name="text" type="java.lang.String" value="Nome *"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JTextField" name="jTextFieldTaskName">
@@ -205,7 +211,7 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="14" style="0"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Prazo"/>
+            <Property name="text" type="java.lang.String" value="Prazo  *"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabelTaskNotes">
@@ -239,6 +245,22 @@
             <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor">
               <Format format="dd/MM/yyyy" subtype="-1" type="1"/>
             </Property>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabelDeadlineError">
+          <Properties>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="0" green="0" id="red" palette="1" red="ff" type="palette"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Campo Prazo &#xe9; obrigatorio"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabelNameError">
+          <Properties>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="0" green="0" id="red" palette="1" red="ff" type="palette"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Campo Nome &#xe9; obrigatorio"/>
           </Properties>
         </Component>
       </SubComponents>
