@@ -8,7 +8,10 @@
   
   
   
-  https://raw.githubusercontent.com/Rafael-720/Meu-Gestor-de-Projetos/main/img1.JPG
+  <img src="https://raw.githubusercontent.com/Rafael-720/Meu-Gestor-de-Projetos/main/img1.JPG"/>
   
-  https://raw.githubusercontent.com/Rafael-720/Meu-Gestor-de-Projetos/main/img2.JPG
+  
+  <img src="https://raw.githubusercontent.com/Rafael-720/Meu-Gestor-de-Projetos/main/img2.JPG"/>
+  
+  
   
