@@ -7,5 +7,8 @@
   -MySql
   
   
-  https://github.com/Rafael-720/Meu-Gestor-de-Projetos/blob/main/img1.JPG?raw=true
+  
+  https://raw.githubusercontent.com/Rafael-720/Meu-Gestor-de-Projetos/main/img1.JPG
+  
+  https://raw.githubusercontent.com/Rafael-720/Meu-Gestor-de-Projetos/main/img2.JPG
   
